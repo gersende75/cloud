@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        <!--{{ partial "breadcrumbs.html" . }}-->
+        <div id="heading-breadcrumbs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Nos offres</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="offers">
+              {{ $paginator := .Paginate (where .Data.Pages "Type" "offres") }}
+              {{ range $paginator.Pages }}
+
+              <div class="carte">
+               <div class="carte-block-top">
+                {{ if .Params.offres }}
+
+                <img src="{{ .Site.BaseURL}}{{ .Params.offres }}" class="img-responsive" alt="Card image cap">
+                {{ else }}
+                <img src="{{ .Site.BaseURL}}{{ .Params.offres }}" class="img-responsive" alt="Card image cap">
+                {{ end }}
+                </div>
+                <div class="carte-body">
+                  <h5 class="carte-title">{{ .Title }}</h5>
+                 </div>
+                    <p class="carte-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="{{ .Permalink }}" class="carte-button">En savoir plus</a>
+                  </div>
+             {{ end }}
+           </div>
+         </div>
+       </div>
+
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

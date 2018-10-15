@@ -1,0 +1,4 @@
+weight: 1
+name: "Production"
+icon: "fa fa-cogs"
+description: "De l'intégration continue à l'orchestration des services avec Docker en haute disponibilité, votre plateforme de production repose sur les meilleures pratiques."
