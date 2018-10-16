@@ -1,0 +1,154 @@
+<div class="container" id="contact">
+    <div class="row" >
+        <div class="col-md-8">
+            <section>
+
+                {{ if isset .Site.Params "email" }}
+
+                <p>{{ .Site.Params.contact.subtitle }}</p>
+
+                <form class="contact-form" method="post" action="https://formspree.io/{{ .Site.Params.email }}">
+
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="name"></label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Nom*" required>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="surname"></label>
+                            <input type="text" class="form-control" name="surname" id="surname" placeholder="Prénom">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="email"></label>
+                            <input type="text" class="form-control" name="business" id="business" placeholder="Société">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="email"></label>
+                            <input type="text" class="form-control" name="email" id="email" placeholder="Email*" required>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="form-group">
+                          <label for="message"></label>
+                            <textarea id="message" class="form-control" name="message" placeholder="Votre message*" required ></textarea>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="state"></label>
+                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Téléphone">
+                          </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="country"></label>
+                            <input type="text" class="form-control" name="country" id="country" placeholder="Pays">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="country"></label>
+                            <input type="text" class="form-control" name="city" id="city" placeholder="Ville">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="state"></label>
+                            <input type="text" class="form-control" name="state" id="state" placeholder="Département">
+                        </div>
+                      </div>
+                      <div class="col-sm-12 text-center">
+                       <button type="submit" class="btn-submit-contact" class="btn btn-template-main">{{ i18n "contactSend" }}</button>
+                     </div>
+
+                    <!-- /.row -->
+                </form>
+
+                {{ end }}
+
+            </section>
+
+        </div>
+
+
+      <div class="col-md-4">
+
+                    {{ if isset .Site.Params "address" }}
+
+
+                      <div class="phone">
+                        <a href="tel:+33 1 83 62 72 88" class="phone"><img src="../img/phone.svg" id="icons" >+33 1 83 62 72 88</a>
+                      </div>
+                      <div class="adress">
+                        <img src="../img/placeholder.svg" id="icons">
+                          CloudCrane SAS<br>
+                          <span>21 place de la République</span><br>
+                          <span>75003 Paris</span><br>
+                          <span>France</span>
+                        </p>
+                      </div>
+              
+
+
+
+                    {{ end }}
+
+      </div>
+
+
+    </div>
+          <p class="info">{{ .Site.Params.contact.description }}</p>
+    <!-- /.row -->
+</div>
+
+<script>
+function validateForm() {
+    var n = document.getElementById('name').value;
+    var e = document.getElementById('email').value;
+    var m = document.getElementById('message').value;
+    var onlyLetters =/^[a-zA-Z\s]*$/;
+    var onlyEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+
+    if(n == "" || n == null){
+        document.getElementById('nameLabel').innerHTML = ('Please enter your name');
+        document.getElementById('name').style.borderColor = "red";
+        return false;
+    }
+
+
+    if (!n.match(onlyLetters)) {
+        document.getElementById('nameLabel').innerHTML = ('Please enter only letters');
+        document.getElementById('name').style.borderColor = "red";
+        return false;
+    }
+
+    if(e == "" || e == null ){
+          document.getElementById('emailLabel').innerHTML = ('Please enter your email');
+          document.getElementById('email').style.borderColor = "red";
+          return false;
+      }
+
+    if (!e.match(onlyEmail)) {
+        document.getElementById('emailLabel').innerHTML = ('Please enter a valid email address');
+        document.getElementById('email').style.borderColor = "red";
+        return false;
+    }
+
+    if(m == "" || m == null){
+        document.getElementById('messageLabel').innerHTML = ('Please enter your message');
+        document.getElementById('message').style.borderColor = "red";
+        return false;
+    }
+
+    else{
+          return true;
+      }
+}
+</script>
