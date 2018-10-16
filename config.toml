@@ -56,7 +56,7 @@ paginate = 5
     # - you're done. Happy mailing!
     #
     # Enable the contact form by entering your Formspree.io email
-    email = "contact@cloudcrane.io"
+    email = ""
 
     about_us = "<p>CLOUDCRANE ACCOMPAGNE LES ENTREPRISES DANS L’INTÉGRATION CONTINUE D'APPLICATIONS MÉTIERS SUR DES PLATEFORMES D’HÉBERGEMENT À HAUTE VALEUR AJOUTÉE. </p>"
     copyright = "Copyright (c) 2018. CloudCrane. Tous droits réservés"
