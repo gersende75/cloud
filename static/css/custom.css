@@ -1,0 +1,733 @@
+/* your styles go here */
+.box-image-text .image {
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.box-simple {
+  min-height: 230px;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica";
+}
+
+h1 {
+  color: #202e59;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+h2 {
+  color: #202e59;
+  font-weight: 700;
+  font-size: 07.25rem;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.9;
+  color: #7b7b7b;
+  text-align: justify;
+}
+
+a, a:hover {
+  color: #7b7b7b;
+}
+
+@media (max-width: 640px) {
+  h1 {
+  font-size: 35px;
+  }
+  h2 {
+    font-size: 2.50rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    letter-spacing: 10px;
+    }
+  p {
+    font-size: 14px;
+  }
+}
+
+/* Clients-logo */
+
+.grayscale img{
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+}
+.grayscale img:hover{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+}
+
+@media (max-width: 640px){
+.grayscale img{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Contact Form */
+
+.form-group .form-control {
+    border-bottom: 2px solid black !important;
+    border-style: none none solid none;
+    border-radius: 0;
+    color: black;
+    font-size: 16px;
+}
+
+.btn-submit-contact {
+    font-family: "Montserrat", "Helvetica";
+    text-align: center;
+    padding: 16px 26px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    border: 3px solid #202e59;
+    color: #fff;
+    background-color: #202e59;
+    border-radius: 60px;
+    overflow: hidden;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-transition: background-color ease 0.15s 0.1s,color ease .25s;
+    -ms-transition: background-color ease 0.15s 0.1s,color ease .25s;
+    transition: background-color ease 0.15s 0.1s,color ease .25s;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.btn-submit-contact:hover {
+    background-color: transparent;
+    color: #201F25;
+}
+
+span {
+    margin-left: 51px;
+}
+
+#icons {
+    margin-right: 10px;
+    height: 35px;
+    width: 35px;
+}
+
+.phone {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 11%;
+}
+
+.phone:hover {
+  color: black;
+}
+
+.adress {
+    color: black;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 37px;
+    font-weight: 400;
+}
+
+@media (max-width: 640px) {
+  .adress, .phone {
+    text-align: center;
+    margin-left: -10px;
+  }
+  .adress {
+    margin-bottom: 5rem;
+  }
+  .phone {
+    margin-top: -10%;
+  }
+  span {
+    margin-left: 10px;
+  }
+  #icons {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+  }
+}
+
+/* Nav */
+
+.navbar {
+  margin-bottom: 0px !important;
+  border-radius: 0px !important;
+}
+
+.navbar-brand {
+  border-bottom: none;
+}
+
+.navbar-default {
+    border-color: #ff644e;
+    background-color: #ff644e;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: rgba(255,255,255,.02);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+    background-color: #ff644e;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ff644e;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    border-color:  #fff;
+    background-color: transparent;
+}
+
+.navbar-default .nav li a {
+    text-transform: uppercase;
+    text-decoration: none!important;
+    font-family: "Montserrat", "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400!important;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+    font-size:14px;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: #fff;
+    background-color: transparent !important;
+    border-top: none !important;
+}
+
+.navbar-brand>img {
+    height: 50px;
+    max-width: 300px;
+    margin: -12px;
+}
+
+@media(max-width:640px) {
+    .navbar-brand>img {
+        height: 40px;
+        max-width: 300px;
+        margin: 0px;
+    }
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        padding: 10px 0;
+        padding-bottom: 2px;
+        border: 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        transition: all .5s;
+        border-bottom: none;
+    }
+
+    .navbar-default .navbar-nav>.active>a {
+        border-radius: 3px;
+    }
+
+    .navbar-default.navbar-shrink {
+        padding: 10px 0;
+
+    }
+
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav>li>a {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+.btn-draw {
+  border:none;
+  position:relative;
+  padding:0 1em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+
+.btn-draw:before,.btn-draw:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #202e59;
+  transition:400ms ease all;
+}
+
+.btn-draw:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+
+.btn-draw:hover:before,.btn-draw:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+/*    Table    */
+
+table {
+  margin-bottom: 10rem!important;
+}
+
+td {
+  font-size: 13px;
+}
+
+tr {
+  min-height: 50px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+tr.a {
+  text-align: left;
+}
+
+td.sub {
+  font-size: 18px;
+  text-align:left!important;
+}
+
+td.sub:hover {
+  background-color:white!important;
+}
+
+.check-symbol {
+  width: 24px;
+  height:24px;
+  color: #158fab;
+}
+
+.cancel-symbol {
+  width: 17px;
+  height:17px;
+}
+
+.card-body {
+  margin-top: 10px;
+  font-size: 12px;
+  text-transform: none !important;
+}
+
+.question {
+  width: 17px;
+  height: 17px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.rotate {
+    -moz-transition: all .10s linear;
+    -webkit-transition: all .10s linear;
+    transition: all .10s linear;
+    width: 15px;
+    height: 15px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+.rotate.down {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+
+.table>tbody>tr>th {
+  padding: 20px !important;
+  border-bottom: 1px solid #ddd;
+  font-weight: 100 !important;
+}
+
+.table>tbody>tr>td {
+    padding: 20px !important;
+    border: 1px solid #ddd !important;
+    text-align: center;
+}
+
+.table>thead:first-child>tr:first-child>th {
+  border-top: 1px solid white !important;
+  border-left: 1px solid white !important;
+}
+
+.table>tbody>tr:hover {
+  background-color: #eaeaea;
+}
+
+.table>thead>tr>th {
+  border-bottom: 1px solid #ddd;
+  font-weight: 100 !important;
+}
+
+th.scope {
+  font-weight: lighter;
+}
+
+span.small_typo {
+  margin-left: 0px!important;
+  font-size: 12px;
+}
+
+.header-1 {
+  width: 25%;
+  height:6rem;
+  padding-top: 15px;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+
+}
+.header-2 {
+  width: 25%;
+  height:6rem;
+  background-color: #31498e;
+  padding-top: 15px;
+  color:white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 15px !important;
+}
+
+.header-3 {
+  width: 25%;
+  height:6rem;
+  background-color: #273c77;
+  padding-top: 15px;
+  color:white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 15px !important;
+}
+
+.header-4 {
+  width: 25%;
+  height:6rem;
+  background-color: #202e59;
+  padding-top: 15px;
+  color:white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 15px !important;
+}
+
+.header-title {
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.link_table {
+  color: #555555;
+}
+
+.link_table:hover {
+  color: #31498e;
+}
+
+.bg-gray {
+  background-color: #eaeaea
+}
+
+/*  Carousel */
+
+.home-carousel {
+  background-color: #ff644e;
+}
+
+.home-carousel h1 {
+  text-align: left;
+  color: #202e59;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.home-carousel p {
+  font-size: 18px;
+}
+
+.carousel-content {
+	margin-left: 30px;
+}
+
+.left-chevron {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+}
+
+.right-chevron {
+		position: absolute;
+}
+
+.btn {
+  padding: 140px 12px;
+}
+
+ .icon-carousel {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+@media (min-width: 640px){
+	#mobile{
+    display: none;
+  }
+}
+
+@media (max-width: 640px){
+	#desktop{
+    display: none;
+  }
+	.carousel-content {
+		margin-left: 0px;
+	}
+  .home-carousel h1 {
+  font-size: 30px;
+  text-align: center;
+  }
+  .home-carousel p {
+   font-size: 15px;
+   text-align: center;
+  }
+}
+
+/* footer */
+
+p.pull-left, p.pull-right {
+  font-size: 14px;
+}
+
+/* nos offres */
+
+.offers {
+  display: flex;
+}
+
+.carte {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin: 20px 20px 250px 0px;
+}
+
+.body-offers {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.carte-title {
+    margin-bottom: .75rem;
+    padding: 12px;
+}
+
+.carte-text {
+  padding: 12px;
+}
+
+.carte-button {
+  padding: 12px;
+  font-family: "Montserrat", "Helvetica";
+  width: 40%;
+  cursor: pointer;
+  border: 1px solid #202e59;
+  background-color: #202e59;
+  color: #fff;
+  border-radius: 60px;
+  font-weight: 400;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: background-color ease 0.15s 0.1s,color ease .25s;
+  -ms-transition: background-color ease 0.15s 0.1s,color ease .25s;
+  transition: background-color ease 0.15s 0.1s,color ease .25s;
+  margin: 20px 0 50px 10px;
+}
+
+.carte-button:hover {
+  border: 1px solid #202e59;
+  background-color: #fff;
+  color: black;
+
+}
+
+@media (max-width: 640px) {
+  .carte {
+    margin: 10px 10px 50px 10px;
+  }
+  .carte-button {
+    width:50%;
+  }
+  .offers {
+    display: inline-block;
+  }
+}
+
+h5 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: "Open Sans", "Helvetica";
+  font-weight: 700;
+}
+
+.ProgressBar,
+.ProgressBar-contentCircle {
+  display: table;
+  height: 210px;
+  position: absolute;
+  width: 210px;
+}
+
+.ProgressBar-circle,
+.ProgressBar-background {
+  fill: none;
+  stroke: #ff644e;
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.ProgressBar-background {
+  stroke: white;
+  stroke-width: 4;
+  z-index: 0;
+}
+
+.ProgressBar-percentage {
+  color: #202e59;
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/************************/
+/* structure de la page */
+/************************/
+.Content {
+  height: 270px;
+  margin: -135px 0 0 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.List {
+  display: flex;
+  list-style: none;
+  margin: 10px auto;
+  padding: 0px;
+  width: 840px;
+  height: 210px;
+}
+
+@media (max-width: 780px) {
+  .List {
+    display: none;
+  }
+  .stats {
+    margin-top: 0px;
+  }
+}
+.List-item {
+  float: left;
+  width: 400px;
+}
+
+.Title {
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: none!important;
+}
+
+.stats {
+  margin: 70px 0px 100px 0;
+}
+
+@media (max-width: 780px) {
+  .stats {
+    margin-top: 0px;
+  }
+}
+
+.progress-bar {
+  background-color: #202e59!important;
+}
+
+.media {
+  margin-bottom: 5rem;
+}

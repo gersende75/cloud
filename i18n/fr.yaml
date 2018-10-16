@@ -1,0 +1,68 @@
+- id: home
+  translation: "Home"
+
+- id: templateBy
+  translation: "Modèle par"
+
+- id: portedBy
+  translation: "Porté vers Hugo par"
+
+- id: contactGoTo
+  translation: "Aller à la page de contact"
+
+- id: contactAddrTitle
+  translation: "Adresse"
+
+- id: contactTitle
+  translation: "Contact"
+
+- id: contactForm
+  translation: "Formulaire de contact"
+
+- id: contactName
+  translation: "Votre nom"
+
+- id: contactMail
+  translation: "Votre adresse email"
+
+- id: contactMessage
+  translation: "Votre message"
+
+- id: contactSend
+  translation: "Envoyer"
+
+- id: navHome
+  translation: "Retour à la page d'accueil"
+
+- id: navToggle
+  translation: "Changer la navigation"
+
+- id: categoriesTitle
+  translation: "Catégories"
+
+- id: searchTitle
+  translation: "Recherche"
+
+- id: tagsTitle
+  translation: "Etiquettes"
+
+- id: continueReading
+  translation: "Poursuivre la lecture"
+
+- id: readMore
+  translation: "Voir plus"
+
+- id: authorBy
+  translation: "Par"
+
+- id: recentPosts
+  translation: "Articles récents"
+
+- id: aboutUs
+  translation: "A propos"
+
+- id: newer
+  translation: "Plus récent"
+
+- id: older
+  translation: "Plus ancien"

@@ -1,0 +1,42 @@
+<section>
+    <div class="row">
+      <div>
+        <h2>{{ .Site.Params.clients_list.title }}</h2>
+      </div>
+    </div>
+    <div class="row flexbox{{ if .Site.Params.clients_list.center }} flexbox-center{{ end }}">
+
+      {{ range .Site.Params.clients }}
+
+        <div class="col-md-4 col-sm-6 col" class=>
+          {{ $url := printf "img/logos/%s" .logo }}
+          {{ if .link }}
+            <!--<a href="{{ .link }}">-->
+            <section class="grayscale">
+              <img src="{{ $url | absURL }}"  class="img-responsive img-centered" alt="">
+          <!--</a>-->
+          {{ else }}
+
+            <img src="{{ $url | absURL }}"  class="img-responsive img-centered" alt="">
+          {{ end }}
+        </section>
+        </div>
+
+        <ul class="owl-carousel customers">
+            {{ range .Site.Data.clients }}
+            <li class="item" title="{{ .name }}">
+                {{ if .url }}
+                  <a href="{{ .url }}" target="_blank">
+                    <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
+                  </a>
+                {{ else }}
+                  <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
+                {{ end }}
+            </li>
+            {{ end }}
+        </ul>
+
+      {{ end }}
+
+    </div>
+</section>
