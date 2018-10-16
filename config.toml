@@ -1,4 +1,4 @@
-baseurl = "http://localhost/"
+baseurl = "//angry-elion-09dae3.netlify.com"
 title = "CloudCrane"
 theme = "hugo-universal-theme"
 languageCode = "fr-fr"
