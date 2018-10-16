@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Offres on CloudCrane</title>
+    <link>http://localhost/offres/</link>
+    <description>Recent content in Offres on CloudCrane</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    
+	<atom:link href="http://localhost/offres/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Offre Xbus</title>
+      <link>http://localhost/nos_offres/offre_xbus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/nos_offres/offre_xbus/</guid>
+      <description>Xbus est une plate-forme Open Source facilitant les échanges entre applications cloud et sur site. Sécurisée, fiable et flexible, elle est conçue pour monter en charge. Cloudcrane propose des contrats de maintenance éditeur pour les différents besoins des entreprises.
+   Xbus
+Open Pour construire et maintenir une solution par soi-même     Xbus
+Standard Pour intégrer Xbus dans une architecture applicative existante     Xbus</description>
+    </item>
+    
+    <item>
+      <title>Productivité</title>
+      <link>http://localhost/nos_offres/outils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/nos_offres/outils/</guid>
+      <description>Lorem ipsum
+     Lorem ipsum
+     Lorem ipsum
+      Lorem ipsum 92% Complete   Lorem ipsum 78% Complete   Lorem ipsum 89% Complete   Lorem ipsum 60%  
+Lorem ipsum 30%  
+Lorem ipsum 78%</description>
+    </item>
+    
+    <item>
+      <title>Hébergements</title>
+      <link>http://localhost/nos_offres/h%C3%A9bergements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/nos_offres/h%C3%A9bergements/</guid>
+      <description>Lorem ipsum  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+  </channel>
+</rss>
