@@ -1,0 +1,10 @@
+weight: 2
+title: "Production orchestrée"
+description: >
+  <p>
+     Intégration continue<br>
+     Déploiement versionné automatique<br>
+     Virtualisation des applications<br>
+     Supervision
+  </p>
+image: "img/carousel/cube.svg"

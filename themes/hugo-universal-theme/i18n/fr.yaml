@@ -1,11 +1,11 @@
 - id: home
-  translation: "Accueil"
+  translation: "Home"
 
 - id: templateBy
-  translation: "Template par"
+  translation: "Modèle par"
 
 - id: portedBy
-  translation: "Porté sur Hugo par"
+  translation: "Porté vers Hugo par"
 
 - id: contactGoTo
   translation: "Aller à la page de contact"
@@ -23,19 +23,19 @@
   translation: "Votre nom"
 
 - id: contactMail
-  translation: "Votre Email"
+  translation: "Votre adresse email"
 
 - id: contactMessage
-  translation: "Votre Message"
+  translation: "Votre message"
 
 - id: contactSend
-  translation: "Envoyer le Message"
+  translation: "Envoyer"
 
 - id: navHome
-  translation: "aller à l'accueil"
+  translation: "Retour à la page d'accueil"
 
 - id: navToggle
-  translation: "Basculer la Navigation"
+  translation: "Changer la navigation"
 
 - id: categoriesTitle
   translation: "Catégories"
@@ -44,28 +44,25 @@
   translation: "Recherche"
 
 - id: tagsTitle
-  translation: "Tags"
+  translation: "Etiquettes"
 
 - id: continueReading
-  translation: "Continuer la lecture"
+  translation: "Poursuivre la lecture"
 
 - id: readMore
-  translation: "En lire plus"
+  translation: "Voir plus"
 
 - id: authorBy
   translation: "Par"
 
 - id: recentPosts
-  translation: "Billets récents"
+  translation: "Articles récents"
 
 - id: aboutUs
-  translation: "À propos de nous"
+  translation: "A propos"
 
 - id: newer
-  translation: "Récent"
+  translation: "Plus récent"
 
 - id: older
-  translation: "Ancien"
-
-- id: publishedOn
-  translation: "le"
+  translation: "Plus ancien"

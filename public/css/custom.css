@@ -571,7 +571,7 @@ p.pull-left, p.pull-right {
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
-    margin: 20px 20px 250px 20px;
+    margin: 20px 20px 250px 0px;
 }
 
 .body-offers {
@@ -693,11 +693,41 @@ h5 {
   height: 210px;
 }
 
+@media (max-width: 780px) {
+  .List {
+    display: none;
+  }
+  .stats {
+    margin-top: 0px;
+  }
+}
 .List-item {
   float: left;
-  width: 210px;
+  width: 400px;
 }
 
 .Title {
   text-align: center;
+}
+
+a:hover {
+  text-decoration: none!important;
+}
+
+.stats {
+  margin: 70px 0px 100px 0;
+}
+
+@media (max-width: 780px) {
+  .stats {
+    margin-top: 0px;
+  }
+}
+
+.progress-bar {
+  background-color: #202e59!important;
+}
+
+.media {
+  margin-bottom: 5rem;
 }
